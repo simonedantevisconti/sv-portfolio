@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;700&display=swap");
+
+:root {
+  --bg: #f4f4f4;
+  --panel: rgba(255, 255, 255, 0.62);
+  --panel-strong: rgba(255, 255, 255, 0.9);
+  --text: #111111;
+  --muted: #707070;
+  --line: rgba(10, 10, 10, 0.08);
+  --accent: #12129c;
+  --accent-2: #8fcfd2;
+  --shadow: 0 20px 80px rgba(18, 18, 156, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  overflow-x: hidden;
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* DARK MODE */
+
+body.dark {
+  --bg: #081d2c;
+  --panel: rgba(8, 29, 44, 0.7);
+  --panel-strong: rgba(8, 29, 44, 0.92);
+  --text: #eaf6ff;
+  --muted: rgba(234, 246, 255, 0.6);
+  --line: rgba(255, 255, 255, 0.08);
+  --accent: #0fbbff;
+  --accent-2: #ff499e;
+  --shadow: 0 20px 80px rgba(0, 0, 0, 0.35);
+}
+
+/* GLOBAL TEXT */
+
+body.dark {
+  color: var(--text);
+}
+
+body.dark .sidebar-area {
+  background: rgba(8, 29, 44, 0.85);
+}
+
+body.dark .profile-name,
+body.dark .side-link,
+body.dark .social-link,
+body.dark .glass-block p,
+body.dark .glass-block h3,
+body.dark .hero-description {
+  color: var(--text);
+}
+
+body.dark .side-link:hover {
+  background: rgba(15, 187, 255, 0.1);
+}
+
+body.dark .side-link.active {
+  background: rgba(15, 187, 255, 0.15);
+  color: var(--accent);
+}
+
+body.dark .line-number,
+body.dark .code-gray {
+  color: var(--muted);
+}
+
+/* HERO */
+
+body.dark .hero-section {
+  background: #081d2c;
+}
+
+body.dark .accent {
+  color: var(--accent);
+}
+
+/* GLASS / SECTIONS */
+
+body.dark .glass-block {
+  background: rgba(8, 29, 44, 0.7);
+  border: 1px solid rgba(15, 187, 255, 0.15);
+}
+
+body.dark .section-label {
+  color: var(--accent);
+}
+
+/* PROJECTS */
+
+body.dark .project-card {
+  color: #081d2c;
+}
+
+/* TOGGLE */
+
+body.dark .toggle-switch {
+  background: #0fbbff;
+}
+
+body.dark .toggle-thumb {
+  background: #081d2c;
+  color: #0fbbff;
+}
+
+/* SOCIAL */
+
+body.dark .social-link {
+  background: rgba(8, 29, 44, 0.9);
+  color: var(--text);
+}
+
+body.dark .social-link:hover {
+  color: var(--accent);
+}

@@ -1,0 +1,58 @@
+.about-section {
+  padding: 80px 0;
+}
+
+.about-title {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(2rem, 3vw, 3rem);
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: var(--text);
+}
+
+.about-content {
+  max-width: 800px;
+}
+
+.about-headline {
+  font-size: clamp(1.4rem, 2vw, 2rem);
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-family: "Space Grotesk", sans-serif;
+  color: var(--text);
+}
+
+.about-content p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--text);
+  margin-bottom: 18px;
+}
+
+.about-location {
+  font-weight: 600;
+  margin-top: 20px;
+  color: var(--accent);
+}
+
+/* DARK MODE */
+
+body.dark .about-section {
+  background: transparent;
+}
+
+body.dark .about-title {
+  color: var(--text);
+}
+
+body.dark .about-headline {
+  color: var(--text);
+}
+
+body.dark .about-content p {
+  color: var(--text);
+}
+
+body.dark .about-location {
+  color: var(--accent-2);
+}
