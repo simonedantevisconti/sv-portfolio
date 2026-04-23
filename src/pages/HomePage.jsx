@@ -1,7 +1,7 @@
 import Sidebar from "../components/Sidebar";
 import HeroSection from "../components/HeroSection";
 import FloatingBadge from "../components/FloatingBadge";
-import BackgroundGlow from "../components/BackgroundGlow";
+import BackgroundGlow from "../components/background-glow";
 
 const HomePage = () => {
   return (
