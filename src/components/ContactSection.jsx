@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import { FaEnvelope, FaLocationDot, FaWhatsapp } from "react-icons/fa6";
+import { FaEnvelope, FaLocationDot } from "react-icons/fa6";
+import { FaWhatsapp } from "react-icons/fa";
 
 const ContactSection = () => {
   return (
