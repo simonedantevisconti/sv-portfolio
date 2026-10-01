@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import { HiArrowDown } from "react-icons/hi";
 import ProjectsSection from "./ProjectsSection";
+import ServicesSection from "./ServicesSection";
+import ContactSection from "./ContactSection";
 import AboutSection from "./AboutSection";
 import TypedText from "./TypedText";
 import { useContext } from "react";
@@ -73,8 +75,10 @@ const HeroSection = () => {
         </div>
       </div>
 
+      <ServicesSection />
       <ProjectsSection />
       <AboutSection />
+      <ContactSection />
     </section>
   );
 };
