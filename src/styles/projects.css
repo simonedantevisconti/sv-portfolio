@@ -17,17 +17,17 @@
 
 /* CARD */
 .project-card {
-  display: block;
+  display: flex;
+  flex-direction: column;
   border-radius: 20px;
   padding: 28px;
-  min-height: 420px;
+  min-height: 460px;
   position: relative;
   overflow: hidden;
-  color: #111;
+  color: white;
   text-decoration: none;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease;
-  color: white;
 }
 
 /* GRADIENTI stile screenshot */
@@ -68,9 +68,18 @@
   object-fit: contain;
 }
 
+/* DESCRIPTION */
+.project-description {
+  margin: 24px 0 0;
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 0.98rem;
+  line-height: 1.55;
+}
+
 /* FOOTER */
 .project-footer {
-  margin-top: 30px;
+  margin-top: auto;
+  padding-top: 30px;
 }
 
 .project-link {
@@ -83,6 +92,7 @@
 }
 
 .project-sub {
+  margin-bottom: 0;
   font-size: 0.95rem;
   color: rgba(255, 255, 255, 0.7);
 }
@@ -94,6 +104,6 @@
   }
 
   .project-card {
-    min-height: 360px;
+    min-height: 420px;
   }
 }
