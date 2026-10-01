@@ -1,7 +1,13 @@
 import { motion } from "framer-motion";
 import { HiSquares2X2 } from "react-icons/hi2";
 import { BsBinocularsFill } from "react-icons/bs";
-import { FaCircle, FaMoon, FaSun } from "react-icons/fa6";
+import {
+  FaCircle,
+  FaCode,
+  FaEnvelope,
+  FaMoon,
+  FaSun,
+} from "react-icons/fa6";
 import { useContext } from "react";
 import SocialLinks from "./SocialLinks";
 import { ThemeContext } from "../context/ThemeContext";
@@ -39,12 +45,19 @@ const Sidebar = () => {
           Simone Visconti
         </motion.h3>
 
-        <nav className="side-nav">
+        <nav className="side-nav" aria-label="Navigazione principale">
           <a href="#home" className="side-link active">
             <span className="side-icon">
               <HiSquares2X2 />
             </span>
             Home
+          </a>
+
+          <a href="#servizi" className="side-link">
+            <span className="side-icon">
+              <FaCode />
+            </span>
+            Servizi
           </a>
 
           <a href="#progetti" className="side-link">
@@ -59,6 +72,13 @@ const Sidebar = () => {
               <FaCircle />
             </span>
             Chi sono
+          </a>
+
+          <a href="#contatti" className="side-link">
+            <span className="side-icon">
+              <FaEnvelope />
+            </span>
+            Contatti
           </a>
         </nav>
       </div>
