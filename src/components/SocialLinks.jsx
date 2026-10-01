@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { FaGithub, FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 const socials = [
@@ -13,6 +13,12 @@ const socials = [
     icon: <FaLinkedinIn />,
     href: "https://www.linkedin.com/in/simone-dante-visconti/",
     label: "LinkedIn",
+  },
+  {
+    id: 3,
+    icon: <FaWhatsapp />,
+    href: "https://wa.me/393451287102",
+    label: "WhatsApp",
   },
 ];
 
