@@ -147,14 +147,14 @@
 @media (max-width: 991px) {
   .hero-section {
     min-height: auto;
-    padding: 38px 22px 72px;
+    padding: 0 22px 72px;
   }
 
   .hero-inner {
-    min-height: auto;
+    min-height: calc(100svh - 64px);
     max-width: 760px;
-    padding-left: 0;
-    padding-right: 0;
+    padding: 38px 0;
+    box-sizing: border-box;
   }
 
   .hero-logo {
@@ -195,7 +195,12 @@
 
 @media (max-width: 576px) {
   .hero-section {
-    padding: 30px 16px 56px;
+    padding: 0 16px 56px;
+  }
+
+  .hero-inner {
+    min-height: calc(100svh - 60px);
+    padding: 28px 0;
   }
 
   .hero-mark {
