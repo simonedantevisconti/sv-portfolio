@@ -15,7 +15,6 @@
   gap: 30px;
 }
 
-/* CARD */
 .project-card {
   display: flex;
   flex-direction: column;
@@ -30,7 +29,6 @@
   transition: all 0.3s ease;
 }
 
-/* GRADIENTI stile screenshot */
 .bg-gradient-1 {
   background: linear-gradient(135deg, #081d2c 0%, #0fbbff 100%);
   color: white;
@@ -46,7 +44,6 @@
   color: white;
 }
 
-/* TITLE */
 .project-title {
   font-weight: 700;
   font-size: 1.3rem;
@@ -54,7 +51,6 @@
   color: white;
 }
 
-/* IMAGE */
 .project-image-wrap {
   display: flex;
   justify-content: center;
@@ -68,7 +64,6 @@
   object-fit: contain;
 }
 
-/* DESCRIPTION */
 .project-description {
   margin: 24px 0 0;
   color: rgba(255, 255, 255, 0.88);
@@ -76,7 +71,6 @@
   line-height: 1.55;
 }
 
-/* FOOTER */
 .project-footer {
   margin-top: auto;
   padding-top: 30px;
@@ -97,13 +91,66 @@
   color: rgba(255, 255, 255, 0.7);
 }
 
-/* RESPONSIVE */
 @media (max-width: 991px) {
+  .projects-section {
+    padding: 64px 0;
+  }
+
+  .projects-title {
+    margin-bottom: 28px;
+  }
+
   .projects-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
   }
 
   .project-card {
-    min-height: 420px;
+    min-height: 390px;
+    padding: 22px;
+  }
+
+  .project-image-wrap {
+    height: 180px;
+  }
+}
+
+@media (max-width: 640px) {
+  .projects-section {
+    padding: 50px 0;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .project-card {
+    min-height: auto;
+    padding: 20px;
+    border-radius: 18px;
+  }
+
+  .project-title {
+    margin-bottom: 14px;
+    font-size: 1.15rem;
+  }
+
+  .project-image-wrap {
+    height: 165px;
+  }
+
+  .project-description {
+    margin-top: 18px;
+    font-size: 0.93rem;
+    line-height: 1.5;
+  }
+
+  .project-footer {
+    padding-top: 22px;
+  }
+
+  .project-link {
+    min-height: 44px;
   }
 }
