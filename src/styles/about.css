@@ -56,3 +56,24 @@ body.dark .about-content p {
 body.dark .about-location {
   color: var(--accent-2);
 }
+
+
+@media (max-width: 767px) {
+  .about-section {
+    padding: 50px 0;
+  }
+
+  .about-title {
+    margin-bottom: 24px;
+  }
+
+  .about-headline {
+    font-size: 1.45rem;
+    line-height: 1.2;
+  }
+
+  .about-content p {
+    font-size: 1rem;
+    line-height: 1.65;
+  }
+}
