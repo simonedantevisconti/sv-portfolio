@@ -1,16 +1,11 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { FaCookieBite, FaXmark } from "react-icons/fa6";
 
 const CookieWidget = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [hasChoice, setHasChoice] = useState(false);
-
-  useEffect(() => {
-    const savedChoice = localStorage.getItem("cookie-consent");
-    if (savedChoice) {
-      setHasChoice(true);
-    }
-  }, []);
+  const [hasChoice, setHasChoice] = useState(() => {
+    return Boolean(localStorage.getItem("cookie-consent"));
+  });
 
   const handleAccept = () => {
     localStorage.setItem("cookie-consent", "accepted");
