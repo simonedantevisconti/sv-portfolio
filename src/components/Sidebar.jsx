@@ -23,12 +23,20 @@ const Sidebar = () => {
     setMenuOpen(false);
 
     window.setTimeout(() => {
-      const target = document.querySelector(href);
+      const section = document.querySelector(href);
+      const target =
+        href === "#home" ? section : section?.querySelector("h2") || section;
 
       if (target) {
-        target.scrollIntoView({
+        const headerOffset = window.innerWidth <= 576 ? 68 : 76;
+        const top =
+          target.getBoundingClientRect().top +
+          window.scrollY -
+          headerOffset;
+
+        window.scrollTo({
+          top,
           behavior: "smooth",
-          block: "start",
         });
 
         window.history.replaceState(null, "", href);
