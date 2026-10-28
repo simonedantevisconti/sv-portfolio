@@ -157,3 +157,20 @@ body.dark .social-link:hover {
     padding-right: 0;
   }
 }
+
+
+section[id] {
+  scroll-margin-top: 20px;
+}
+
+@media (max-width: 991px) {
+  section[id] {
+    scroll-margin-top: 76px;
+  }
+}
+
+@media (max-width: 576px) {
+  section[id] {
+    scroll-margin-top: 68px;
+  }
+}
