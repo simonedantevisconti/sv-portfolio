@@ -6,7 +6,7 @@ import ContactSection from "./ContactSection";
 import AboutSection from "./AboutSection";
 import TypedText from "./TypedText";
 import { useContext } from "react";
-import { ThemeContext } from "../context/ThemeContext";
+import { ThemeContext } from "../context/ThemeContext.js";
 
 const HeroSection = () => {
   const { darkMode } = useContext(ThemeContext);
