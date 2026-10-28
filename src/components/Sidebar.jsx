@@ -18,7 +18,23 @@ const Sidebar = () => {
   const { darkMode, toggleTheme } = useContext(ThemeContext);
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const closeMenu = () => setMenuOpen(false);
+  const handleNavClick = (event, href) => {
+    event.preventDefault();
+    setMenuOpen(false);
+
+    window.setTimeout(() => {
+      const target = document.querySelector(href);
+
+      if (target) {
+        target.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+
+        window.history.replaceState(null, "", href);
+      }
+    }, 340);
+  };
 
   const navItems = [
     {
@@ -102,7 +118,7 @@ const Sidebar = () => {
                 key={item.href}
                 href={item.href}
                 className="side-link"
-                onClick={closeMenu}
+                onClick={(event) => handleNavClick(event, item.href)}
               >
                 <span className="side-icon">{item.icon}</span>
                 {item.label}
