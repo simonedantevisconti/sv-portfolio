@@ -12,18 +12,22 @@ const projects = [
   },
   {
     id: 2,
-    title: ".Quattro",
-    image: "/quattro.png",
-    link: "https://quattro-4.netlify.app/",
-    subtitle: "Web app / UI",
+    title: ".Dov'è?",
+    image: "/dove.png",
+    link: "https://doveapp.site/",
+    subtitle: "Utility / Web app",
+    description:
+      "Un'app pensata per ricordare dove hai messo i tuoi oggetti: puoi salvarli, organizzarli e ritrovarli facilmente quando non ricordi più dove si trovano.",
     bg: "bg-gradient-2",
   },
   {
     id: 3,
-    title: ".SpinTheGlobe",
-    image: "/spin.png",
-    link: "https://globespin.netlify.app/",
-    subtitle: "Interactive / Map",
+    title: ".MancoLista",
+    image: "/mancolista.png",
+    link: "https://mancolista.site/",
+    subtitle: "Collezioni / Web app",
+    description:
+      "Un'app per tenere traccia delle figurine e trading card mancanti o doppie, organizzare le collezioni e avere sempre sotto controllo cosa manca e cosa puoi scambiare.",
     bg: "bg-gradient-3",
   },
   {
