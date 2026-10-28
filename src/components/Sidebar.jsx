@@ -10,7 +10,7 @@ import {
 } from "react-icons/fa6";
 import { useContext } from "react";
 import SocialLinks from "./SocialLinks";
-import { ThemeContext } from "../context/ThemeContext";
+import { ThemeContext } from "../context/ThemeContext.js";
 
 const Sidebar = () => {
   const { darkMode, toggleTheme } = useContext(ThemeContext);
