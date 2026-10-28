@@ -135,3 +135,25 @@ body.dark .social-link {
 body.dark .social-link:hover {
   color: var(--accent);
 }
+
+
+@media (max-width: 991px) {
+  html {
+    scroll-padding-top: 118px;
+  }
+
+  body {
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+@media (max-width: 576px) {
+  html {
+    scroll-padding-top: 108px;
+  }
+
+  .container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
